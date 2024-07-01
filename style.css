@@ -1,0 +1,244 @@
+body {
+    font-family: "Alien Encounter", sans-serif;
+    background-image: url(http://www.hdwallpapers.in/walls/star_trail-wide.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animate-bg 50s infinite linear;
+}
+
+@keyframes animate-bg {
+    from {
+        background-size: 100%;
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-size: 120%;
+        background-position: 0% 20%
+    }
+
+    to {
+        background-size: 100%;
+        background-position: 0% 0%;
+    }
+}
+
+
+.heading, h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    font-family: "Alien Encounter", sans-serif;
+    font-size: 120px;
+    color: bisque;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 80px;
+}
+
+#edit {
+    font-size: 60px;
+    font-family: "Alien Encounter", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.madLibsEdit {
+    border-radius: 10px;
+    width: 40%;
+    padding: 50px;
+}
+
+#preview {
+    font-size: 60px;
+    font-family: 'Exo', sans-serif;
+    font-family: "Alien Encounter", sans-serif;
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.madLibsPreview {
+    border-radius: 10px;
+    width: 40%;
+    padding: 50px;
+}
+
+input {
+    width: 50px;
+    background-color: rgb(152, 168, 229);
+    border-radius: 8px;
+    border-color: white;
+    border: solid rgba(32, 186, 237, 0.873);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Exo', sans-serif;
+    font-family: "Alien Encounter", sans-serif;
+    font-size: 20px;
+    color: azure;
+}
+
+    input::placeholder {
+        text-align: center;
+        color: var(--azura);
+        font-size: 20px;
+    }
+
+.blank {
+    width: 50px;
+    background-color: rgb(152, 168, 229);
+    border-radius: 8px;
+    border-color: white;
+    border: solid rgb(96, 138, 244);
+    font-family: 'Exo', sans-serif;
+    font-family: "Alien Encounter", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    color: azure;
+}
+
+input:focus {
+    background-color: rgb(227, 213, 211);
+    color: rgba(240, 152, 152, 0.744);
+}
+
+.output {
+    background-color: rgb(152, 168, 229);
+    color: white;
+    border-radius: 8px;
+    border-color: white;
+    border: solid rgb(156, 162, 234);
+    font-family: 'Exo', sans-serif;
+    font-family: "Alien Encounter", sans-serif;
+}
+
+span {
+    color: navy;
+    font-family: 'Exo', sans-serif;
+    font-family: "Alien Encounter", sans-serif;
+    font-size: larger;
+    font-size: 50px;
+    margin: 8px;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset, .play, .stop {
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Exo', sans-serif; /* Apply Exo font */
+    font-family: "Alien Encounter", sans-serif; /* Apply Alien Encounter font */
+    padding: 10px 20px; /* Apply padding to all sides */
+}
+
+.reset {
+    background-color: #3d3d3d; /* Dark grey for reset button */
+    font-size: 35px; /* Larger font size for reset button */
+}
+
+    .reset:hover, .play:hover, .stop:hover {
+        transform: scale(1.2); /* Scale up on hover */
+        cursor: pointer;
+    }
+
+.play {
+    background-color: #1ba94c; /* Light green for play button */
+}
+
+.stop {
+    color: #f44336; /* Red for stop button text */
+}
+
+    .stop:hover {
+        background-color: #d32f2f; /* Dark red for stop button on hover */
+    }
+
+#google_translate_element {
+    border-radius: 10px;
+}
+
+.goog-te-gadget-icon {
+    display: none !important;
+}
+
+div#google_translate_element div.goog-te-gadget-simple {
+    background-color: gray
+}
+
+    div#google_translate_element
+    div.goog-te-gadget-simple
+    a.goog-te-menu-value
+    span {
+        color: tomato
+    }
+
+        div#google_translate_element
+        div.goog-te-gadget-simple
+        a.goog-te-menu-value
+        span:hover {
+            color: #fff;
+        }
+
+        div#google_translate_element
+        div.goog-te-gadget-simple
+        a.goog-te-menu-value
+        span:nth-of-type(3) {
+            display: none;
+        }
+
+        div#google_translate_element
+        div.goog-te-gadget-simple
+        a.goog-te-menu-value
+        span:nth-of-type(2) {
+            display: none;
+        }
+
+
+@media only screen and (max-width: 1200px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}

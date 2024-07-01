@@ -1,0 +1,12 @@
+Astronaut[n] Sam[n] landed[v] on Mars[n]. 
+The mission[n] was tough[a]. 
+Sam[n] explored[v] the surface[n] and found[v] strange[a] rocks[n].
+
+Back[n] at base[n], scientists[n] studied[v] the samples[n]. 
+They discovered[v] signs[n] of ancient[a] life[n].
+
+Sam[n] felt[v] proud[a] of the achievement[n]. 
+Communication[n] with Earth[n] shared[v] the exciting[a] news[n].
+
+The abbreviation[n] "n" means[v] noun. We use[v] the letter[n] "v" for verbs. 
+And for "a", you can[v] make a good[a] guess.

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The story of Mars</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,700&family=Shalimar&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="Title">
+        <h1 class="header">Mars Libs:</h1>
+    </div>
+    <div class="flex-container">
+        <div class="madLibsEdit ">
+            <h3 id="edit">Provide nouns,verbs and adjectives</h3>
+        </div>
+        <div class="madLibsPreview ">
+            <h3 id="preview">Here's your Mars lib</h3>
+        </div>
+    </div>
+
+    <div class="Buttons">
+        <button class="reset"> Reset </button>
+        <button class="play"> Sound on </button>
+        <button class="stop"> Sound off </button>
+        <div id="google_translate_element"></div>
+    </div>
+
+    <audio id="sound" src="./ufo-transition-fx-178652.mp3" loop="loop"></audio>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+      );}
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script src="do-not-touch.js"></script>
+    <script src="madlibs.js"></script>
+</body>
+
+</html>
